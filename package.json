@@ -1,0 +1,24 @@
+{
+  "name": "hotel-demos",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Config-driven demo site generator for boutique hotels",
+  "scripts": {
+    "build": "node build.mjs",
+    "media": "node scripts/media.mjs",
+    "verify": "node scripts/verify.mjs",
+    "serve": "npx http-server docs -p 8080 -s"
+  },
+  "devDependencies": {
+    "@fontsource/fraunces": "^5.1.0",
+    "@fontsource/figtree": "^5.1.0",
+    "@fontsource/ibm-plex-sans-arabic": "^5.1.0",
+    "sharp": "^0.33.5",
+    "playwright": "^1.48.0",
+    "http-server": "^14.1.1"
+  },
+  "allowScripts": {
+    "sharp@0.33.5": true
+  }
+}

@@ -1,0 +1,38 @@
+:root {
+  --lime-wash: #F7F6F2;
+  --stone: #DDD8CE;
+  --aegean-ink: #0E2A47;
+  --sea: #1F5C8C;
+  --shutter-blue: #3E7CB1;
+  --sunset: #E3924F;
+  --sunset-deep: #A8551A; /* AA-safe sunset tone for text on light backgrounds */
+
+  --ink-strong: #0E2A47;
+  --ink-soft: #3A4A5C;
+  --surface: var(--lime-wash);
+  --surface-raised: #FFFFFF;
+  --border-soft: rgba(14, 42, 71, 0.14);
+
+  --font-display: "Fraunces", "Iowan Old Style", serif;
+  --font-body: "Figtree", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-arabic: "IBM Plex Sans Arabic", -apple-system, "Segoe UI", sans-serif;
+
+  --arch-radius: clamp(60px, 12vw, 140px);
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2.5rem;
+  --space-5: 4rem;
+  --space-6: 6.5rem;
+
+  --container-max: 1180px;
+  --shadow-soft: 0 20px 50px -20px rgba(14, 42, 71, 0.35);
+  --shadow-card: 0 12px 32px -18px rgba(14, 42, 71, 0.28);
+
+  color-scheme: light;
+}
+
+[dir="rtl"] {
+  --font-body: "IBM Plex Sans Arabic", -apple-system, "Segoe UI", sans-serif;
+  --font-display: "IBM Plex Sans Arabic", "Fraunces", serif;
+}

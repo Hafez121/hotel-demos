@@ -1,0 +1,296 @@
+[
+  {
+    "id": "1",
+    "alt": {
+      "en": "Sunset over the Mediterranean at Le Blanc Bleu",
+      "ar": "غروب الشمس على البحر المتوسط في لو بلان بلو"
+    },
+    "sourceWidth": 1500,
+    "sourceHeight": 781,
+    "aspect": 1.9206,
+    "variants": [
+      {
+        "width": 640,
+        "format": "avif",
+        "file": "photos/1-640.avif"
+      },
+      {
+        "width": 640,
+        "format": "webp",
+        "file": "photos/1-640.webp"
+      },
+      {
+        "width": 1024,
+        "format": "avif",
+        "file": "photos/1-1024.avif"
+      },
+      {
+        "width": 1024,
+        "format": "webp",
+        "file": "photos/1-1024.webp"
+      },
+      {
+        "width": 1500,
+        "format": "avif",
+        "file": "photos/1-1500.avif"
+      },
+      {
+        "width": 1500,
+        "format": "webp",
+        "file": "photos/1-1500.webp"
+      }
+    ]
+  },
+  {
+    "id": "1-3",
+    "alt": {
+      "en": "Stone bungalow pathway leading to the sea",
+      "ar": "ممر حجري يؤدي إلى البحر"
+    },
+    "sourceWidth": 1500,
+    "sourceHeight": 781,
+    "aspect": 1.9206,
+    "variants": [
+      {
+        "width": 640,
+        "format": "avif",
+        "file": "photos/1-3-640.avif"
+      },
+      {
+        "width": 640,
+        "format": "webp",
+        "file": "photos/1-3-640.webp"
+      },
+      {
+        "width": 1024,
+        "format": "avif",
+        "file": "photos/1-3-1024.avif"
+      },
+      {
+        "width": 1024,
+        "format": "webp",
+        "file": "photos/1-3-1024.webp"
+      },
+      {
+        "width": 1500,
+        "format": "avif",
+        "file": "photos/1-3-1500.avif"
+      },
+      {
+        "width": 1500,
+        "format": "webp",
+        "file": "photos/1-3-1500.webp"
+      }
+    ]
+  },
+  {
+    "id": "1-2",
+    "alt": {
+      "en": "Sea-view terrace at Le Blanc Bleu",
+      "ar": "شرفة بإطلالة على البحر في لو بلان بلو"
+    },
+    "sourceWidth": 1500,
+    "sourceHeight": 781,
+    "aspect": 1.9206,
+    "variants": [
+      {
+        "width": 640,
+        "format": "avif",
+        "file": "photos/1-2-640.avif"
+      },
+      {
+        "width": 640,
+        "format": "webp",
+        "file": "photos/1-2-640.webp"
+      },
+      {
+        "width": 1024,
+        "format": "avif",
+        "file": "photos/1-2-1024.avif"
+      },
+      {
+        "width": 1024,
+        "format": "webp",
+        "file": "photos/1-2-1024.webp"
+      },
+      {
+        "width": 1500,
+        "format": "avif",
+        "file": "photos/1-2-1500.avif"
+      },
+      {
+        "width": 1500,
+        "format": "webp",
+        "file": "photos/1-2-1500.webp"
+      }
+    ]
+  },
+  {
+    "id": "1-4",
+    "alt": {
+      "en": "Garden terrace overlooking the water",
+      "ar": "تراس الحديقة المطل على المياه"
+    },
+    "sourceWidth": 1500,
+    "sourceHeight": 781,
+    "aspect": 1.9206,
+    "variants": [
+      {
+        "width": 640,
+        "format": "avif",
+        "file": "photos/1-4-640.avif"
+      },
+      {
+        "width": 640,
+        "format": "webp",
+        "file": "photos/1-4-640.webp"
+      },
+      {
+        "width": 1024,
+        "format": "avif",
+        "file": "photos/1-4-1024.avif"
+      },
+      {
+        "width": 1024,
+        "format": "webp",
+        "file": "photos/1-4-1024.webp"
+      },
+      {
+        "width": 1500,
+        "format": "avif",
+        "file": "photos/1-4-1500.avif"
+      },
+      {
+        "width": 1500,
+        "format": "webp",
+        "file": "photos/1-4-1500.webp"
+      }
+    ]
+  },
+  {
+    "id": "bg2019new",
+    "alt": {
+      "en": "Terrace café view with the Lebanese flag",
+      "ar": "إطلالة مقهى التراس مع العلم اللبناني"
+    },
+    "sourceWidth": 1527,
+    "sourceHeight": 738,
+    "aspect": 2.0691,
+    "variants": [
+      {
+        "width": 640,
+        "format": "avif",
+        "file": "photos/bg2019new-640.avif"
+      },
+      {
+        "width": 640,
+        "format": "webp",
+        "file": "photos/bg2019new-640.webp"
+      },
+      {
+        "width": 1024,
+        "format": "avif",
+        "file": "photos/bg2019new-1024.avif"
+      },
+      {
+        "width": 1024,
+        "format": "webp",
+        "file": "photos/bg2019new-1024.webp"
+      },
+      {
+        "width": 1527,
+        "format": "avif",
+        "file": "photos/bg2019new-1527.avif"
+      },
+      {
+        "width": 1527,
+        "format": "webp",
+        "file": "photos/bg2019new-1527.webp"
+      }
+    ]
+  },
+  {
+    "id": "bg20193",
+    "alt": {
+      "en": "Bungalow lounge with stone wall",
+      "ar": "صالة الجناح بجدارها الحجري"
+    },
+    "sourceWidth": 1583,
+    "sourceHeight": 766,
+    "aspect": 2.0666,
+    "variants": [
+      {
+        "width": 640,
+        "format": "avif",
+        "file": "photos/bg20193-640.avif"
+      },
+      {
+        "width": 640,
+        "format": "webp",
+        "file": "photos/bg20193-640.webp"
+      },
+      {
+        "width": 1024,
+        "format": "avif",
+        "file": "photos/bg20193-1024.avif"
+      },
+      {
+        "width": 1024,
+        "format": "webp",
+        "file": "photos/bg20193-1024.webp"
+      },
+      {
+        "width": 1583,
+        "format": "avif",
+        "file": "photos/bg20193-1583.avif"
+      },
+      {
+        "width": 1583,
+        "format": "webp",
+        "file": "photos/bg20193-1583.webp"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "alt": {
+      "en": "Sunset on the Byblos coast",
+      "ar": "غروب الشمس على ساحل جبيل"
+    },
+    "sourceWidth": 1500,
+    "sourceHeight": 547,
+    "aspect": 2.7422,
+    "variants": [
+      {
+        "width": 640,
+        "format": "avif",
+        "file": "photos/2-640.avif"
+      },
+      {
+        "width": 640,
+        "format": "webp",
+        "file": "photos/2-640.webp"
+      },
+      {
+        "width": 1024,
+        "format": "avif",
+        "file": "photos/2-1024.avif"
+      },
+      {
+        "width": 1024,
+        "format": "webp",
+        "file": "photos/2-1024.webp"
+      },
+      {
+        "width": 1500,
+        "format": "avif",
+        "file": "photos/2-1500.avif"
+      },
+      {
+        "width": 1500,
+        "format": "webp",
+        "file": "photos/2-1500.webp"
+      }
+    ]
+  }
+]

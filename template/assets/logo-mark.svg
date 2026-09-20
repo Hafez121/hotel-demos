@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" role="img" aria-label="Le Blanc Bleu monogram">
+  <defs>
+    <linearGradient id="archFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F7F6F2"/>
+      <stop offset="100%" stop-color="#E8E4D9"/>
+    </linearGradient>
+  </defs>
+  <path d="M4 136 V56 C4 26 28 4 60 4 C92 4 116 26 116 56 V136 Z" fill="url(#archFill)" stroke="#0E2A47" stroke-width="3"/>
+  <path d="M18 136 V58 C18 34 36 18 60 18 C84 18 102 34 102 58 V136" fill="none" stroke="#3E7CB1" stroke-width="1.5" opacity="0.55"/>
+  <text x="60" y="98" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-weight="600" font-size="52" fill="#0E2A47">BB</text>
+  <circle cx="60" cy="46" r="3.5" fill="#E3924F"/>
+</svg>
