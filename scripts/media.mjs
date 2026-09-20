@@ -143,14 +143,18 @@ async function processHeroVideo() {
     console.log(`  -> ${(stat.size / 1024 / 1024).toFixed(2)} MB`);
   }
 
-  // Poster frame (first frame of the loop)
+  // Poster frame (first frame of the loop) — kept small since it's on the critical LCP path.
+  const posterRaw = path.join(cacheDir, "poster-raw.jpg");
   const posterJpg = path.join(outDir, "poster.jpg");
   const posterWebp = path.join(outDir, "poster.webp");
+  if (!fssync.existsSync(posterRaw)) {
+    await run("ffmpeg", ["-y", "-i", loopedPath, "-vframes", "1", "-q:v", "2", posterRaw]);
+  }
   if (!fssync.existsSync(posterJpg)) {
-    await run("ffmpeg", ["-y", "-i", loopedPath, "-vframes", "1", "-q:v", "3", posterJpg]);
+    await sharp(posterRaw).resize({ width: 1280 }).jpeg({ quality: 62, mozjpeg: true }).toFile(posterJpg);
   }
   if (!fssync.existsSync(posterWebp)) {
-    await sharp(posterJpg).webp({ quality: 78 }).toFile(posterWebp);
+    await sharp(posterRaw).resize({ width: 1280 }).webp({ quality: 62 }).toFile(posterWebp);
   }
 }
 

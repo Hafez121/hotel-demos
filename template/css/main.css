@@ -185,7 +185,7 @@ img { max-width: 100%; display: block; }
   z-index: 0;
   will-change: transform;
 }
-.hero__video, .hero__poster {
+.hero__video {
   width: 100%;
   height: 100%;
   object-fit: cover;

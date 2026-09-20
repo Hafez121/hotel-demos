@@ -7,7 +7,6 @@ const STRINGS = {
     dir: "ltr",
     lang: "en",
     skipToContent: "Skip to content",
-    navHome: "Le Blanc Bleu",
     switchLang: "العربية",
     ratingSuffix: "on Google",
     reviewsHeading: "What guests say",
@@ -24,7 +23,6 @@ const STRINGS = {
     dir: "rtl",
     lang: "ar",
     skipToContent: "الانتقال إلى المحتوى",
-    navHome: "لو بلان بلو",
     switchLang: "English",
     ratingSuffix: "على غوغل",
     reviewsHeading: "ماذا يقول ضيوفنا",
@@ -79,7 +77,7 @@ function pictureWithAlt(photo, lang, sizes) {
   return pictureSources(photo, sizes).replace('alt=""', `alt="${altFor(photo, lang)}"`);
 }
 
-export function renderPage({ config, lang, photos, canonicalBase, siteUrl }) {
+export function renderPage({ config, lang, photos, canonicalBase }) {
   const t = STRINGS[lang];
   const other = lang === "en" ? "ar" : "en";
   const up = lang === "en" ? ".." : "../..";
@@ -90,10 +88,8 @@ export function renderPage({ config, lang, photos, canonicalBase, siteUrl }) {
   const demoWaHref = `https://wa.me/${config.demoBanner.whatsapp}`;
   const pagePath = lang === "en" ? `${config.slug}/` : `${config.slug}/ar/`;
   const canonical = `${canonicalBase}/${pagePath}`;
-  const altPath = lang === "en" ? `${config.slug}/ar/` : `${config.slug}/`;
   const ogImage = `${canonicalBase}/${config.slug}/media/og.jpg`;
 
-  const heroPhoto = photos.find((p) => p.id === "1-3") || photos[0];
   const aboutPhotos = photos.filter((p) => ["1-3", "1"].includes(p.id));
   const stayPhotos = photos.filter((p) => ["bg2019new", "1-2"].includes(p.id));
   const galleryRest = photos.filter((p) => ["1-4", "bg20193", "2"].includes(p.id));
@@ -147,6 +143,7 @@ ${config.demo ? '<meta name="robots" content="noindex, nofollow">' : ""}
 <link rel="apple-touch-icon" href="${up}/apple-touch-icon.png">
 
 <link rel="preload" as="font" type="font/woff2" href="${up}/fonts/fraunces-latin-600-normal.woff2" crossorigin>
+<link rel="preload" as="image" href="media/poster.jpg" fetchpriority="high">
 <style>${CRITICAL_CSS(lang)}</style>
 <link rel="stylesheet" href="${up}/main.css">
 <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
@@ -163,7 +160,7 @@ ${config.demo ? '<meta name="robots" content="noindex, nofollow">' : ""}
   <div class="wrap site-header__row">
     <a class="brand" href="#top">
       <img src="${up}/assets/logo-mark.svg" alt="" width="34" height="40" class="brand__mark">
-      <span class="brand__name">${esc(t.navHome)}</span>
+      <span class="brand__name">${esc(config.name)}</span>
     </a>
     <a class="lang-switch" href="${lang === "en" ? "ar/" : "../"}" hreflang="${other}">${t.switchLang}</a>
   </div>
@@ -175,13 +172,12 @@ ${config.demo ? '<meta name="robots" content="noindex, nofollow">' : ""}
     <video
       id="hero-video"
       class="hero__video"
-      autoplay muted loop playsinline preload="metadata"
+      muted loop playsinline preload="metadata"
       poster="media/poster.jpg">
       <source src="media/hero-1080.webm" type="video/webm" media="(min-width:701px)">
       <source src="media/hero-1080.mp4" type="video/mp4" media="(min-width:701px)">
       <source src="media/hero-720.mp4" type="video/mp4">
     </video>
-    <img class="hero__poster" src="media/poster.jpg" alt="" hidden>
     <div class="hero__scrim"></div>
   </div>
   <div class="hero__content wrap" data-parallax-layer="medium">

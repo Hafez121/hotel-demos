@@ -16,25 +16,16 @@
   }
 
   /* ---------- Motion / data-saver gating ---------- */
+  // The <video> has no static autoplay attribute, so on reduced-motion/save-data
+  // it simply never starts playback and its poster frame stays on screen —
+  // no separate poster <img> needed, which keeps the LCP path to a single request.
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var saveData = !!(navigator.connection && navigator.connection.saveData);
   var video = document.getElementById("hero-video");
-  var poster = document.querySelector(".hero__poster");
 
-  function useStaticPoster() {
-    if (video) {
-      video.pause();
-      video.removeAttribute("autoplay");
-      video.hidden = true;
-    }
-    if (poster) poster.hidden = false;
-  }
-
-  if (reduceMotion || saveData) {
-    useStaticPoster();
-  } else if (video) {
+  if (video && !reduceMotion && !saveData) {
     video.play().catch(function () {
-      /* autoplay blocked; poster remains visible via video's poster attribute */
+      /* autoplay blocked by the browser; poster stays visible via the poster attribute */
     });
   }
 
